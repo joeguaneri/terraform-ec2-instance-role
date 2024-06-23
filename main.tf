@@ -14,7 +14,7 @@ resource aws_iam_role "ec2_role" {
 
   assume_role_policy = data.aws_iam_policy_document.instance-assume-role-policy.json
   managed_policy_arns = [
-    "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role",
+    "arn:aws:iam::aws:policy/service-role/ROSAKMSProviderPolicy",
     "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore",
     "arn:aws:iam::aws:policy/AmazonSSMManagedEC2InstanceDefaultPolicy",
     "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
